@@ -34,6 +34,11 @@ After Changing: no. right = 64, no wrong = 36
 Without Changing: no. right = 40, no wrong = 60
 
 Trial 5:
+After Changing: no. right = 62, no wrong = 38
+Without Changing: no. right = 37, no wrong = 63
+
+
+Trial 5:
 After Changing: no. right = 75, no wrong = 25
 Without Changing: no. right = 40, no wrong = 60
 
