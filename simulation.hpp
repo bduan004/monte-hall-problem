@@ -12,8 +12,8 @@ private:
     int guess;
     int right;
     int wrong;
-    int pRight;
-    int pWrong;
+    int Right;
+    int Wrong;
     int allTrials;
     int rightDoor;
     int eliminatedDoor;
@@ -32,17 +32,17 @@ public:
 #endif
 void simulation::checkGuess(){
     if(guess == rightDoor){
-        pRight++;
+        Right++;
     }
     else {
-        pWrong++;
+        Wrong++;
     }
     allTrials++;
 }
 void simulation::calculatePercentage(){
-    double percentage = static_cast<double>(pRight)/allTrials * 100;
+    double percentage = static_cast<double>(Right)/allTrials * 100;
     cout<<"percentage right: "<<percentage<<"%"<<endl;
-    percentage = static_cast<double>(pWrong)/allTrials * 100;
+    percentage = static_cast<double>(Wrong)/allTrials * 100;
     cout<<"percentage wrong: "<<percentage<<"%"<<endl;
 }
 void simulation::randomizeDoors()
@@ -50,7 +50,7 @@ void simulation::randomizeDoors()
     rightDoor = rand() %3;
     doors[rightDoor].setCarTrue();
 }
-simulation::simulation():pRight(0), pWrong(0), allTrials(0), rightDoor(0), eliminatedDoor(0){
+simulation::simulation():Right(0), Wrong(0), allTrials(0), rightDoor(0), eliminatedDoor(0){
         doors.assign(3,door());
 }
 simulation::~simulation()
@@ -97,7 +97,7 @@ void simulation::changeGuess(){
 void simulation::eliminateDoor(){
     for(int i = 0; i < 3; i++){
         if(guess!=i){
-            if(!doors[i].getCarTrue()){
+            if(i!=rightDoor){
                 eliminatedDoor = i;
                 break;
             }
