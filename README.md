@@ -71,5 +71,5 @@ Max:34.25
 Standard Deviation: 0.334
 
 
-Conclusions
+Conclusions:
 After analyzing the results of the tests, we can say consisively that if the player changes doors, then they will have a higher chance of getting the door than if they didn't change.
