@@ -73,15 +73,15 @@ Without Changing: Percent right = 33.32, Percent wrong = 66.68
 Results
 
 *Correct after changing:
-mean:66.851
-Min:66.26
-Max:67.78
+mean: 66.851,
+Min: 66.26,
+Max: 67.78,
 Standard Deviation: 0.443
 
 *Correct without changing:
-mean: 33.583
-Min: 32.22
-Max:34.25
+mean: 33.583,
+Min: 32.22,
+Max: 34.25,
 Standard Deviation: 0.334
 
 
