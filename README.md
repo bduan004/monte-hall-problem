@@ -12,34 +12,64 @@ Question:
 Is switching your choice statistically the best option?
 
 Hypothesis:
-Before testing, I predict that if the contestant switches doors, the likelyhood of guessing the correct door will be the same as not switching.
+Before testing, I predict that if the contestant switches doors, the likelyhood of guessing the correct door will be greater than not switching.
 
 Testing the Hypothesis:
-I have coded a simulation of the Monty hall problem using vectors and random number generators to simulate the doors and which one has the car behind it. The code allows the user to enter how many trials they would like to simulate so I will be performing 10 sets of 100 simulations for each door and analyzing the results. 
+I have coded a simulation of the Monty hall problem using vectors and random number generators to simulate the doors and which one has the car behind it. The code allows the user to enter how many trials they would like to simulate so I will be performing 10 sets of 10000 simulations for each door and analyzing the results. With 100000 trials for each situation, I hoped to get as close to the true probability as possible. 
 
 Trial 1:
-After Changing: no. right = 62, no wrong = 38
-Without Changing: no. right = 25, no wrong = 75
+After Changing: Percent right = 66.98, Percent wrong = 33.02
+Without Changing: no. right = 33.67, no wrong = 66.33
 
 Trial 2:
-After Changing:  no. right = 60, no wrong = 40
-Without Changing:  no. right = 37, no wrong = 63
+After Changing:  Percent right = 67.20, Percent wrong = 32.80
+Without Changing:  no. right = 33.59, no wrong = 66.41
 
 Trial 3:
-After Changing: no. right = 77, no wrong = 23
-Without Changing:  no. right = 33, no wrong = 67
+After Changing: Percent right = 67.02, Percent wrong = 32.98
+Without Changing:  Percent right = 33.54, Percent wrong = 66.46
 
 Trial 4:
-After Changing: no. right = 64, no wrong = 36
-Without Changing: no. right = 40, no wrong = 60
+After Changing: Percent right = 66.85, Percent wrong = 33.15
+Without Changing: Percent right = 33.83, Percent wrong = 66.17
 
 Trial 5:
-After Changing: no. right = 62, no wrong = 38
-Without Changing: no. right = 37, no wrong = 63
+After Changing: Percent right = 66.26, Percent wrong = 32.74
+Without Changing: Percent right = 33.62, Percent wrong = 66.38
+
+Trial 6:
+After Changing: Percent right = 67.78, Percent wrong = 32.22
+Without Changing: Percent right = 33.74, Percent wrong = 66.26
+
+Trial 7:
+After Changing: Percent right = 66.52, Percent wrong = 33.48
+Without Changing: Percent right = 32.91, Percent wrong = 67.09
+
+Trial 8:
+After Changing: Percent right = 66.31, Percent wrong = 33.69
+Without Changing: Percent right = 33.36, Percent wrong = 66.64
+
+Trial 9:
+After Changing: Percent right = 66.50, Percent wrong = 33.50
+Without Changing: Percent right = 34.25, Percent wrong = 65.75
+
+Trial 10:
+After Changing: Percent right = 67.09, Percent wrong = 32.91
+Without Changing: Percent right = 33.32, Percent wrong = 66.68
+
+Results
+*Correct after changing:
+mean:66.851
+Min:66.26
+Max:67.78
+Standard Deviation: 0.443
+
+*Correct without changing:
+mean: 33.583
+Min: 32.22
+Max:34.25
+Standard Deviation: 0.334
 
 
-Trial 5:
-After Changing: no. right = 75, no wrong = 25
-Without Changing: no. right = 40, no wrong = 60
-
-
+Conclusions
+After analyzing the results of the tests, we can say consisively that if the player changes doors, then they will have a higher chance of getting the door than if they didn't change.
